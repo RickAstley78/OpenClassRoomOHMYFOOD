@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #ffff;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disparition 1s 3s forwards;
+}
+@keyframes disparition {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.lettres {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.lettre {
+  animation: spin 3s;
+  color: #9356dc;
+  font-size: 80px;
+  letter-spacing: 15px;
+  font-family: "Shrikhand", cursive;
+}
+.restaurants .fa-solid {
+  color: transparent;
+  background-image: white;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.layout-star {
+  position: relative;
+}
+.restaurants .fa-solid:hover {
+  position: relative;
+  top: -1px;
+  opacity: 1;
+  cursor: pointer ;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants .fa-regular {
+  position: absolute;
+}
+/* .restaurants .fa-regular:hover {
+  cursor: pointer;
+  color: #9356dc;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+} */
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  max-width: 1500px;
+}
+
+body header h1 {
+  font-family: "Shrikhand", cursive;
+  margin: auto;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 30px;
+}
+body .nav-bar {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.nav-bar .search-bar input {
+  border: none;
+  font-size: 16px;
+  background-color: #EAEAEA;
+  width: 120px;
+}
+body main .menu ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0;
+}
+.bold {
+  font-weight: bold;
+}
+.gris {
+  color: #353535;
+}
+.background-grey {
+  background-color: #EAEAEA;
+}
+.backround-location {
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+.menu-explore {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.menu-explore h2 {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 40px;
+}
+.menu-explore p {
+  font-size: 18px;
+  margin: 0;
+}
+.search-bar .text-description p {
+  font-size: 18px
+}
+.btn {
+  color: white;
+  position: relative;
+  border-radius: 2rem;
+  font-size: 16px;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  box-shadow: 0 3px 10px darkgrey;
+  border-style: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: darken(linear-gradient,5);
+  position: relative;
+  opacity: 0.9;
+}
+.btn-light {
+  opacity: 1;
+  z-index: 0;
+  position: absolute;
+  transition: opacity 250ms;
+}
+.search-bar {
+  height: 100%;
+  padding-bottom: 55px;
+}
+#choix-menu li {
+  width: 75%;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 5px darkgrey;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#choix-menu li:hover {
+  background-color: #F5EDFF;
+  cursor: pointer;
+}
+.menu ol li span {
+  position: relative;
+  left: -1rem;
+  border: 1px solid #9356dc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+}
+.menu h2 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+body main .restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.card h3 {
+  font-size: 18px;
+}
+.card p {
+  font-size: 17px;
+}
+.restaurants h2 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+.restaurants .card {  
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px darkgrey;
+}
+.restaurants span {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #2FAF94;
+  padding: 0.5rem;
+  width: 75px;
+}
+.card .description {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  color: black;
+}
+.placement-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 17px;
+  padding-left: 17px;
+}
+.card a {
+  text-decoration: none;
+}
+.card h3 {
+  margin: 0;
+}
+.card p {
+  margin: 0;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+.titre-footer {
+  font-family: 'Shrikhand';
+  font-style: italic;
+}
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 0 1rem 1.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+footer h1 {
+  margin: 0;
+}
+
+@media all and (min-width: 768px)
+ {
+  body main .menu ol {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: initial;
+    margin-left: 20px;
+  }
+  .menu-explore h2 {
+    font-size: 40px;
+  }
+  #choix-menu li {
+    width: 290px;
+  }
+  .menu {
+    padding-left: 190px;
+    height: 200px;
+  }
+  .menu h2 {
+    margin-top: 50px;
+  }
+  .restaurants {
+    padding-left: 190px;
+  }
+  .menu ol li span {
+    padding: 0.2rem 0.4rem;    
+    position: relative;
+    left: -0.8rem;
+  }
+  .placement-cards {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .restaurants .card {
+    width: 25%;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .titre-footer {
+    font-family: 'Shrikhand';
+    padding-right: 100px;
+  }
+  footer {
+    display: flex;
+    gap: 70px;
+    flex-direction: row-reverse;
+    font-size: 16px;
+  }
+  footer a {
+    font-size: 16px
+  }
+}

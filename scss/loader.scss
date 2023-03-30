@@ -1,0 +1,24 @@
+$bgcolor: red;
+.bouton-rouge {
+    background-color: red
+}
+.bordure {
+    border: 1px solid blue;
+}
+.bouton-rouge 
+&{
+    font-size: 10px;
+}
+body {
+    background-color: $bgcolor;
+}
+
+h1 {
+    background-color: green;
+    b {
+        color: blue;
+    }
+    em {
+        color: orange;
+    }
+}
