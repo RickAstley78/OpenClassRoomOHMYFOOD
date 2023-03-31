@@ -306,9 +306,12 @@ footer h1 {
   .placement-cards {
     flex-direction: row;
     justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
   }
   .restaurants .card {
-    width: 25%;
+    width: 40%;
   }
   .footer {
     display: flex;
