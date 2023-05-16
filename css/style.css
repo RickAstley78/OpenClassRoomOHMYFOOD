@@ -9,7 +9,7 @@
   height: 100vh;
   inset: 0;
   z-index: 1;
-  animation: disparition 1s 3s forwards;
+  animation: disparition 1s 2s forwards;
 }
 @keyframes disparition {
   from {
@@ -38,7 +38,6 @@
 }
 .restaurants .fa-solid {
   color: transparent;
-  background-image: white;
   transition: opacity 1s ease-in-out;
   opacity: 0;
 }
@@ -47,7 +46,7 @@
 }
 .restaurants .fa-solid:hover {
   position: relative;
-  top: -1px;
+  top: -2px;
   opacity: 1;
   cursor: pointer ;
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -147,7 +146,6 @@ body main .menu ol {
 }
 .btn:hover {
   cursor: pointer;
-  background-color: darken(linear-gradient,5);
   position: relative;
   opacity: 0.9;
 }
