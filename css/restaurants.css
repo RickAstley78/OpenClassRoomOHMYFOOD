@@ -55,6 +55,7 @@ body header .titre {
     color: transparent;
     transition: opacity 1s ease-in-out;
     opacity: 0;
+    margin-right: 15px;
 }
 .layout-star {
     position: relative;
@@ -119,9 +120,10 @@ body header .titre {
     font-family: "Shrikhand", cursive;
     font-size: 28px;
     font-style: italic;
+    margin-left: 15px;
 }
 .articles {
-    width: 100%;
+    width: 90%;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -133,7 +135,6 @@ body header .titre {
     width: 100%;
     box-shadow: 0 2px 5px darkgrey;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 .select-choix {
     display: flex;
@@ -178,21 +179,23 @@ body header .titre {
     width: 100%;
     min-width: 60%;
     padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .description h4{
     margin: 0;
     margin-bottom: 6px;
     font-size: 18px;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
 }
 .description p{
     margin: 0;
     font-size: 16px;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
 }
 .btn {
     display: flex;
